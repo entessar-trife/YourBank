@@ -1,0 +1,174 @@
+.features {
+  background-color: var(--black10-color);
+}
+
+.featuresTitle {
+  width: 81.202%;
+}
+
+.featuresContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  column-gap: 30px;
+}
+
+.featuresContent .ET-btns {
+  width: 19.298%;
+  background-color: var(--black11-color);
+  border-radius: 12px;
+}
+
+.featuresContent .ET-btns button {
+  width: 100%;
+  border-radius: 100px;
+  border: 1px solid var(--gray15-color);
+  padding: 17.341px 23px;
+  text-align: start;
+  transition: .2s ease-in-out;
+}
+
+.featuresContent .ET-btns button:not(.ET-activeBtn):hover {
+  background-color: var(--gray15-color);
+}
+
+.featuresContent .ET-btns button:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.ET-btn {
+  background-color: transparent;
+  color: var(--white-color);
+}
+
+.ET-activeBtn {
+  color: var(--green60-color);
+  background-color: var(--black10-color);
+}
+
+.featuresCards {
+  width: 78.822%;
+}
+
+.featuresCards .fading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* start responsive */
+
+/* figma design */
+@media (max-width: 1919px) {
+  .featuresTitle {
+    margin-bottom: 60px;
+    width: 80.46875%;
+  }
+
+  .featuresContent {
+    column-gap: 20px;
+  }
+
+  .featuresContent .ET-btns {
+    width: 19.14%;
+    padding: 40px;
+  }
+
+  .featuresContent .ET-btns button {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 13.3px 19px;
+  }
+
+  .featuresContent .ET-btns button:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .featuresCards {
+    width: 79.296%;
+  }
+
+  .featuresCards .fading {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1439px) {
+  .featuresContent .ET-btns {
+    width: 21.298%;
+  }
+
+  .featuresContent .ET-btns button {
+    font-size: 12px;
+    padding: 14px 10px;
+    text-align: center;
+  }
+
+  .featuresCards {
+    width: 76.296%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .featuresTitle {
+    width: 100%;
+  }
+
+  .featuresContent .ET-btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .featuresCards {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .featuresContent .ET-btns button {
+    width: 25%;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .featuresContent .ET-btns button:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+/* figma design */
+@media (max-width: 768px) {
+  .featuresContent {
+    flex-direction: column;
+    overflow: hidden;
+    flex-wrap: nowrap;
+  }
+
+  .featuresTitle {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .featuresContent .ET-btns {
+    padding: 20px;
+    overflow-x: scroll;
+  }
+
+  .featuresContent .ET-btns::-webkit-scrollbar {
+    display: none;
+  }
+
+  .featuresContent .ET-btns button {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    padding: 13.3px 19px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

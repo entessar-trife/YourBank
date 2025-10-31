@@ -1,0 +1,261 @@
+.AM-mission-vision-card-reverse,
+.AM-mission-vision-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.AM-mission-vision-card {
+    margin-bottom: -114.5px;
+}
+
+.AM-mission-vision-card-reverse {
+    flex-direction: row-reverse;
+}
+.AM-mission-vision-card .mission-vision-img,
+.AM-mission-vision-card-reverse .mission-vision-img {
+    background-image: url("../../assets/imgs/AbstractDesign6.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 664px;
+    padding: 60px;
+    padding-bottom: 0px;
+    border: 1px solid var(--gray15-color);
+    border-radius: 50px 50px 20px 20px;
+}
+
+.mission-vision-img {
+    position: relative;
+}
+.img-container{
+  transition: 0.4s;
+  overflow: hidden;
+  border-radius: 30px 30px 0 0;
+}
+/* add layer(img) of main img */
+
+.mission-vision-img::after {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("../../assets/imgs/blend.png");
+    opacity: 25%;
+}
+
+.mission-vision-img img {
+    position: relative;
+    transition: 0.5s all ease-in-out;
+}
+
+/* add scale effect on img of card */
+
+.AM-mission-vision-card:hover img,
+.AM-mission-vision-card-reverse:hover img{
+    transform: scale(1.1);
+}
+
+.AM-mission-vision-card .content {
+    padding-left: 50px;
+    border-left: 1px solid var(--green60-color);
+}
+
+.AM-mission-vision-card-reverse .content {
+    padding-right: 50px;
+    border-right: 1px solid var(--green60-color);
+}
+
+.AM-mission-vision-card .content .title,
+.AM-mission-vision-card-reverse .content .title {
+    color: var(--white-color);
+    font-size: 38px;
+    line-height: 57px;
+    margin-bottom: 14px;
+    transition: .3s ease-in-out;
+}
+
+/* add hover effect on title of card */
+
+.AM-mission-vision-card:hover.AM-mission-vision-card .content .title,
+.AM-mission-vision-card-reverse:hover.AM-mission-vision-card-reverse .content .title {
+    color: var(--green60-color);
+}
+
+
+.AM-mission-vision-card .content .desc,
+.AM-mission-vision-card-reverse .content .desc {
+    max-width: 882px;
+    color: var(--gray70-color);
+    margin-bottom: 0;
+}
+
+/* media query */
+
+/* laptop */
+@media (max-width: 1919px) {
+
+    .AM-mission-vision-card .mission-vision-img img,
+    .AM-mission-vision-card-reverse .mission-vision-img img,
+    .AM-mission-vision-card .content,
+    .AM-mission-vision-card-reverse .content {
+        width: 100%;
+    }
+
+    .AM-mission-vision-card .content .desc,
+    .AM-mission-vision-card-reverse .content .desc {
+        max-width: 100%;
+    }
+
+    .AM-mission-vision-card {
+        margin-bottom: -70px;
+    }
+}
+
+/* figma design */
+@media (max-width: 1500px) {
+    .AM-mission-vision-card {
+        margin-bottom: -72px;
+    }
+
+    .AM-mission-vision-card,
+    .AM-mission-vision-card-reverse {
+        justify-content: center;
+    }
+
+    .AM-mission-vision-card .mission-vision-img,
+    .AM-mission-vision-card-reverse .mission-vision-img {
+        width: 545px;
+    }
+
+    .AM-mission-vision-card .mission-vision-img img,
+    .AM-mission-vision-card-reverse .mission-vision-img img {
+        width: 425px;
+    }
+
+    .AM-mission-vision-card .content .title,
+    .AM-mission-vision-card-reverse .content .title {
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 10px;
+    }
+
+    .AM-mission-vision-card .content .desc,
+    .AM-mission-vision-card-reverse .content .desc {
+        max-width: 695px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .AM-mission-vision-card .content {
+        padding-left: 40px;
+        max-width: fit-content;
+    }
+
+    .AM-mission-vision-card-reverse .content {
+        padding-right: 40px;
+        max-width: fit-content;
+    }
+
+}
+
+@media (max-width: 1439px) {
+
+    .AM-mission-vision-card .mission-vision-img img,
+    .AM-mission-vision-card-reverse .mission-vision-img img {
+        width: 100%;
+    }
+
+    .AM-mission-vision-card {
+        margin-bottom: 0px;
+    }
+
+    .AM-mission-vision-card .mission-vision-img,
+    .AM-mission-vision-card-reverse .mission-vision-img {
+        padding: 40px;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .AM-mission-vision-card,
+    .AM-mission-vision-card-reverse {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .AM-mission-vision-card .content {
+        padding-left: 0px;
+        border-left: none;
+        margin-bottom: 50px;
+    }
+
+    .AM-mission-vision-card-reverse .content {
+        padding-right: 0px;
+        border-right: none;
+    }
+
+    .AM-mission-vision-card .content,
+    .AM-mission-vision-card-reverse .content {
+        padding-top: 30px;
+        border-top: 1px solid var(--green60-color);
+        width: 100%;
+    }
+
+    .AM-mission-vision-card .mission-vision-img,
+    .AM-mission-vision-card-reverse .mission-vision-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-radius: 50px 50px 0 0;
+    }
+
+    .AM-mission-vision-card .mission-vision-img img,
+    .AM-mission-vision-card-reverse .mission-vision-img img {
+        width: 100%;
+    }
+
+    .AM-mission-vision-card .content .title,
+    .AM-mission-vision-card-reverse .content .title,
+    .AM-mission-vision-card .content .desc,
+    .AM-mission-vision-card-reverse .content .desc {
+        text-align: center;
+    }
+}
+
+/* medium */
+@media (max-width: 768px) {
+
+    .AM-mission-vision-card .mission-vision-img,
+    .AM-mission-vision-card-reverse .mission-vision-img,
+    .AM-mission-vision-card .content,
+    .AM-mission-vision-card-reverse .content {
+        width: 100%;
+    }
+}
+
+/* mobile */
+
+/* figma design */
+@media (max-width: 540px) {
+
+    .AM-mission-vision-card .mission-vision-img,
+    .AM-mission-vision-card-reverse .mission-vision-img {
+        padding: 20px;
+        padding-bottom: 0px;
+    }
+
+    .AM-mission-vision-card .content .title,
+    .AM-mission-vision-card-reverse .content .title {
+        margin-top: -1px;
+        font-size: 26px;
+        line-height: 39px;
+    }
+
+    .AM-mission-vision-card .content .desc,
+    .AM-mission-vision-card-reverse .content .desc {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}

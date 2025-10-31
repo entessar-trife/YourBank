@@ -1,0 +1,77 @@
+/* Main card container styling */
+.MR-faqCard {
+  width: 49.0595611%;
+  padding: 48.5px;
+  background-color: var(--black10-color);
+  border: 1px var(--gray15-color) solid;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+/* Styling for title elements inside the card */
+.MR-faqCard span {
+  color: var(--white-color);
+  line-height: 25px;
+  transition: .3s ease-in-out;
+}
+
+/* Hover effect on the title */
+.MR-faqCard:hover.MR-faqCard span {
+  color: var(--green60-color);
+}
+
+
+/* Horizontal line styling for separating sections */
+.MR-divider {
+  height: 1px;
+  background-color: var(--gray15-color);
+}
+
+/* Paragraph styling inside the card */
+.MR-faqCard p {
+  color: var(--gray70-color);
+  margin-bottom: 0 !important;
+}
+
+/* Responsive styles for medium-large screens (1919px) */
+@media (max-width: 1919px) {
+  .MR-faqCard {
+    width: 49.218%;
+    border-radius: 10px;
+    gap: 24px;
+    padding: 39px;
+  }
+
+  .MR-faqCard span {
+    font-size: 18px;
+    line-height: 22.5px;
+  }
+
+  .MR-faqCard p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/* Responsive styles for screens with max-width: 1439px */
+@media (max-width: 1439px) {
+  .MR-faqCard {
+    width: 48%;
+  }
+}
+
+/* Responsive styles for small screens less than 992px) */
+@media (max-width: 992px) {
+  .MR-faqCard {
+    width: 100%;
+    flex-wrap: wrap;
+    Padding: 29.5px;
+    gap: 20px;
+  }
+
+  .MR-faqCard p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

@@ -1,0 +1,36 @@
+.ES-ourValues{
+    background-color: var(--black10-color);
+}
+.ES-ourValues .AM-title-comp .desc{
+    width: 81.2%;
+    margin-bottom: 0;
+}
+.ES-valuesCardsContainer{
+    margin-top: 80px;
+    gap: 80px;
+}
+
+/* Start Responsive*/
+@media (max-width: 1919px) {
+    .ES-ourValues .AM-title-comp .desc{
+        width: 88.282%;
+    }
+    .ES-valuesCardsContainer{
+        margin-top: 60px;
+        gap: 60px;
+    }
+}
+@media (max-width: 992px) {
+    .ES-ourValues .AM-title-comp .desc{
+        width: 100%;
+        text-align: center;
+    }
+    
+}
+@media (max-width: 540px) {
+    .ES-valuesCardsContainer{
+        margin-top: 50px;
+        gap: 50px;
+    }
+}
+/* End Responsive*/

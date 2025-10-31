@@ -1,0 +1,162 @@
+.PressCardComponent {
+  width: 49.060%;
+  background-color: var(--black11-color);
+  border: 1px solid var(--gray15-color);
+  border-radius: 40px 40px 16px 16px;
+  padding: 30px;
+
+}
+
+.Af-imgBorder {
+  width: 100%;
+  height: 333px;
+  border-radius: 30px 30px 12px 12px;
+  overflow: hidden;
+}
+
+.PressCardComponent .Af-imgBorder img {
+  width: 100%;
+  border-radius: 30px 30px 12px 12px;
+  height: 100%;
+  transition: 0.4s;
+  object-fit: cover;
+}
+
+.PressCardComponent:hover .Af-imgBorder img {
+  transform: scale(1.22);
+}
+
+.PressCardContent {
+  margin-top: 51px;
+  padding: 0 30px;
+}
+
+.PressCardContent h5 {
+  color: var(--white-color);
+  margin-bottom: 0;
+  transition: .3s ease-in-out;
+}
+
+.PressCardComponent:hover .PressCardContent h5 {
+  color: var(--green60-color);
+}
+
+.PressCardContent .ET-cardInfo {
+  margin-top: 20px;
+  width: max-content;
+}
+
+.PressCardContent .ET-cardInfo span {
+  background-color: var(--black10-color);
+  color: var(--gray70-color);
+  border-radius: 68px;
+  border: 1px solid var(--gray15-color);
+  padding: 9px 16px;
+  margin-right: 10px;
+}
+
+.PressCardContent .ET-cardInfo span:nth-child(2) {
+  margin-right: 0;
+}
+
+.PressCardContent p {
+  color: var(--gray70-color);
+  margin-top: 30px;
+}
+
+/* start responsive */
+
+/* figma design */
+@media (max-width: 1919px) {
+  .PressCardComponent {
+    width: 49.21875%;
+    padding: 24px;
+  }
+
+  .PressCardComponent .Af-imgBorder {
+    height: 277px;
+  }
+
+  .PressCardContent {
+    margin-top: 40px;
+    padding: 0 23.7px;
+  }
+
+  .PressCardContent h5 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .PressCardContent .ET-cardInfo {
+    margin-top: 14px;
+    height: 36px;
+  }
+
+  .PressCardContent .ET-cardInfo span {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 7px 14px;
+    margin-right: 6px;
+  }
+
+  .PressCardContent p {
+    margin-top: 24px;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/* figma design */
+@media (max-width: 992px) {
+  .PressCardComponent {
+    width: 100%;
+    padding: 19.3px;
+  }
+
+  .PressCardComponent .Af-imgBorder {
+    height: 206px;
+  }
+
+  .PressCardContent {
+    margin-top: 30px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .PressCardContent h5 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .PressCardContent .ET-cardInfo {
+    margin-top: 10px;
+    height: 33px;
+  }
+
+  .PressCardContent .ET-cardInfo span {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 6px 12px;
+  }
+
+  .PressCardContent p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 389px) {
+  .PressCardContent h5 {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .PressCardContent .ET-cardInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+    height: fit-content;
+  }
+}

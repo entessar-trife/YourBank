@@ -1,0 +1,98 @@
+/* General styling for the Benefits Component container */
+.HW-OurBenefitsComponent {
+    background-color: var(--black10-color);
+}
+
+/* Styling for the description inside the title component */
+.HW-OurBenefitsComponent .AM-title-comp .desc {
+    width: 81.2030075%;
+    margin-bottom: 0;
+}
+
+/* Container for the cards */
+.HW-OurBenefitsCardsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 80px;
+}
+
+/* Styles for a single row of cards */
+.hw-OurBenefitsCardsRow {
+    display: flex;
+    gap: 50px;
+}
+
+/* Vertical dashed line between cards */
+.hw-dashed-lines-vr {
+    width: 1px;
+    background-image: linear-gradient(to bottom,
+            var(--gray15-color) 50%,
+            transparent 50%);
+    background-size: 1px 20px;
+}
+
+/* Horizontal dashed line between rows */
+.hw-dashed-lines-hr {
+    height: 1px;
+    background-image: linear-gradient(to right,
+            var(--gray15-color) 50%,
+            transparent 50%);
+    background-size: 20px 1px;
+}
+
+/* Rounded corner styling for left-aligned cards */
+.hw-roundedCardLeft {
+    border-radius: 50px 20px 50px 20px;
+}
+
+/* Rounded corner styling for right-aligned cards */
+.hw-roundedCardRight {
+    border-radius: 20px 50px 20px 50px;
+}
+
+/* Media query for screens smaller than 1919px */
+@media (max-width: 1919px) {
+    .HW-OurBenefitsCardsContainer {
+        margin-top: 60px;
+        gap: 30px;
+    }
+
+    .hw-OurBenefitsCardsRow {
+        gap: 30px;
+    }
+
+    .HW-OurBenefitsComponent .AM-title-comp .desc {
+        width: 80.46%;
+    }
+}
+
+/* Media query for screens smaller than 992px */
+@media (max-width: 992px) {
+    .HW-OurBenefitsComponent .AM-title-comp .desc {
+        width: 100%;
+    }
+
+    .HW-OurBenefitsCardsContainer {
+        gap: 24px;
+    }
+
+    .hw-OurBenefitsCardsRow {
+        gap: 24px;
+        flex-direction: column;
+    }
+
+    .HW-OurBenefitsComponent .AM-title-comp .desc-product {
+        text-align: center !important;
+    }
+
+    /* Adjust vertical dashed lines to behave as horizontal for stacked layout */
+    .hw-dashed-lines-vr {
+        width: unset;
+        height: 1px;
+        background-image: linear-gradient(to right,
+                var(--gray15-color) 50%,
+                transparent 50%);
+        background-size: 20px 1px;
+    }
+}

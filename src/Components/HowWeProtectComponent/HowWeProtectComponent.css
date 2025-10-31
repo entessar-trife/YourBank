@@ -1,0 +1,213 @@
+.HowWeProtectComponent {
+    background-color: var(--black10-color);
+}
+.HowWeProtectComponent .AM-title-comp{
+    width: 81.32%;
+}
+.HW-howWeProtectYouContainer {
+    position: relative;
+    z-index: 10;
+    margin-top: 117.56px;
+    margin-bottom: 150px;
+}
+
+.howWeProtectCardsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 82.44px;
+    width: 1606px;
+    height: 690px;
+    gap: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.howProtectRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.HowWeProtectComponent .hw-OurBenefitsCard,
+.HowWeProtectComponent .hw-OurBenefitsBlendBg,
+.HowWeProtectComponent .hw-gradient-bg {
+    border-radius: 20px !important;
+}
+
+.howWeProtectBG {
+    width: 99.812030%;
+    z-index: 0;
+    background-color: var(--black11-color);
+    height: 631.11px;
+    border-radius: 50px 50px 20px 20px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.hwHowWeProtectGradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to right, var(--green60-color) 0%, var(--green60-color) 1%);
+    opacity: 0.015;
+    z-index: 3;
+    border-radius: 50px 50px 20px 20px;
+}
+
+.hw-HowWeBlendBG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/src/assets/imgs/blend.png);
+    background-position: center;
+    background-size: 25%;
+    border-radius: 50px 50px 20px 20px;
+    z-index: 2;
+    opacity: 0.4;
+}
+
+.howWeProtectBG::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    background: linear-gradient(to left, rgba(28, 28, 28, 1) 20%, rgba(28, 28, 28, 0) 100%);
+
+}
+
+.HowWeProtectComponent .hw-OurBenefitsCard {
+    height: 330px;
+    min-height: unset !important;
+    gap: 24px;
+}
+
+.HowWeProtectComponent .hw-OurBenefitsCard .OurBenefitsCardDescription {
+    max-width: 588px;
+}
+
+@media (max-width:1919px) {
+    .howWeProtectCardsContainer {
+        width: 90%;
+    }
+    .HW-howWeProtectYouContainer {
+        margin-top: 58px;
+        margin-bottom: 120px;
+    }
+    .HowWeProtectComponent .AM-title-comp{
+        width: 80.46%;
+    }
+    .howWeProtectCardsContainer {
+        top: 62px;
+        height: 612px;
+        gap: 20px;
+    }
+
+    .howProtectRow {
+        gap: 20px;
+        width: 97.21%;
+    }
+
+    .howWeProtectBG {
+        width: 99.127%;
+        height: 549px;
+    }
+
+    .HowWeProtectComponent .hw-OurBenefitsCard {
+        height: 296px;
+        gap: 20px;
+    }
+
+    .HowWeProtectComponent .hw-OurBenefitsCard .OurBenefitsCardDescription {
+        max-width: 470px;
+    }
+}
+
+
+@media (max-width:1200px) {
+    .howWeProtectBG {
+        display: none;
+    }
+
+    .howWeProtectCardsContainer {
+        position: relative;
+    }
+}
+
+
+@media (max-width:992px){
+    .howWeProtectCardsContainer {
+        width: 100%;
+        height: unset;
+    }
+    .HowWeProtectComponent .AM-title-comp{
+        width: 100%;
+    }
+    .howProtectRow {
+        flex-direction: column;
+    }
+
+    .HowWeProtectComponent .hw-OurBenefitsCard {
+        height: 260px;
+        border: 1px solid var(--gray15-color);
+    }
+
+    .HowWeProtectComponent .hw-OurBenefitsCard .OurBenefitsCardDescription {
+        max-width: unset;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /*mobile and smaller*/
+    .HW-howWeProtectYouContainer {
+        margin-top: unset;
+        margin-bottom: 80px;
+    }
+
+    .howProtectRow {
+        gap: 20px;
+        width: unset;
+    }
+
+    .HowWeProtectComponent .hw-OurBenefitsCard {
+        min-height: unset !important;
+        gap: 18px;
+    }
+
+    .HowWeProtectComponent .hw-iconContainer {
+        width: 68px;
+        height: 68px;
+    }
+
+    .HowWeProtectComponent .hw-iconContainer .circle1 {
+        width: 52px;
+        height: 52px;
+    }
+
+    .HowWeProtectComponent .hw-OurBenefitsCardHeading .Af-img-father {
+        width: 68px;
+        height: 68px;
+        padding: 8px;
+    }
+
+    .HowWeProtectComponent .hw-OurBenefitsCardHeading .Af-img-father .Af-img-son {
+        width: 52px;
+        height: 52px;
+        padding: 14px;
+    }
+
+    .HowWeProtectComponent .hw-OurBenefitsCardHeading .Af-img-father .Af-img-son img {
+        width: 24px;
+        height: 24px;
+    }
+}

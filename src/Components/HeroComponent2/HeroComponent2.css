@@ -1,0 +1,288 @@
+/* the father */
+.Af-HeroComponent2-father {
+    padding-top: 198px;
+    padding-left: 8.28%;
+    padding-right: 8.43%;
+    background-color: var(--black10-color);
+}
+/* the container */
+.Af-HeroComponent2 {
+    background-color: var(--black11-color);
+    background-image: url('../../assets/imgs/AbstractDesign4.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 31.58%;
+    width: 100%;
+    padding: 3.12%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+/* heading for careers, security pages */
+.Af-HeroComponent2-heading {
+    z-index: 3;
+    height: max-content;
+    background-color: var(--black10-color);
+    padding: 5.31%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 80px;
+    margin-right: -260px;
+    margin-top: -1px;
+
+}
+/* heading for about page */
+.Af-HeroComponent2-heading-about {
+    z-index: 3;
+    height: max-content;
+    background-color: var(--black10-color);
+    padding: 5.04%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 80px;
+    margin-right: -260px;
+    margin-top: -2px;
+}
+/* text in top of about heading */
+.Af-About-h4 {
+    font-size: 20px !important;
+    line-height: 30px !important;
+    font-weight: 400 !important;
+    color: var(--white-color);
+}
+/* heading title */
+.Af-HeroComponent2-heading .title,
+.Af-HeroComponent2-heading-about .title {
+    font-size: 58px !important;
+    font-weight: 500 !important;
+    line-height: 75.4px !important;
+    margin-bottom: 0px;
+    animation: moveGradient 5s infinite linear;
+    background: linear-gradient(90deg, #caff33, #E4E4E7, #d8ff66, #fff);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+
+    span {
+        font-size: 58px !important;
+        font-weight: 500 !important;
+        line-height: 75.4px !important;
+    }
+}
+/* heading description */
+.Af-HeroComponent2-heading .desc,
+.Af-HeroComponent2-heading-about .desc {
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    line-height: 27px !important;
+    margin-bottom: 0px;
+    margin-top: 23px;
+}
+
+/* media  */
+@media (max-width: 1919px) {
+
+    .Af-HeroComponent2-heading .title,
+    .Af-HeroComponent2-heading-about .title {
+        font-size: 48px !important;
+        line-height: 62.4px !important;
+        font-weight: 500 !important;
+
+        span {
+            font-size: 48px !important;
+            line-height: 62.4px !important;
+            font-weight: 500 !important;
+        }
+    }
+
+    .Af-HeroComponent2-heading .desc,
+    .Af-HeroComponent2-heading-about .desc {
+        font-size: 16.2px !important;
+        line-height: 24px !important;
+        font-weight: 300 !important;
+        margin-top: 20px;
+    }
+
+    .Af-HeroComponent2-father {
+        padding-top: 153px;
+        padding-left: 5.62%;
+        padding-right: 5.55%;
+    }
+
+    .Af-HeroComponent2-heading {
+        padding: 5%;
+        margin-right: -174px;
+    }
+
+    .Af-HeroComponent2-heading-about {
+        padding: 4.72%;
+        margin-right: -174px;
+    }
+
+    .Af-HeroComponent2 img {
+        width: 715px;
+        height: 568px;
+    }
+}
+
+@media(max-width:1439px) {
+    .Af-HeroComponent2 img {
+        width: 650px;
+    }
+
+    .Af-HeroComponent2-heading .title,
+    .Af-HeroComponent2-heading-about .title {
+        font-size: 32px !important;
+        line-height: 45px !important;
+
+        span {
+            font-size: 32px !important;
+            line-height: 45px !important;
+        }
+    }
+
+    .Af-HeroComponent2-heading .desc,
+    .Af-HeroComponent2-heading-about .desc {
+        font-size: 14px !important;
+    }
+}
+
+@media(max-width:992px) {
+    .Af-HeroComponent2-father {
+        padding-top: 138px;
+        padding-left: 1.71%;
+        padding-right: 1.81%;
+    }
+
+    .Af-HeroComponent2 {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 14px;
+    }
+
+    .Af-HeroComponent2-heading,
+    .Af-HeroComponent2-heading-about {
+        width: 100%;
+        margin-right: 0;
+        margin-top: -50px;
+        border-radius: 20px;
+        padding: 4.61%;
+        text-align: center;
+    }
+
+    .Af-HeroComponent2 img {
+        width: 100%;
+        height: 550px;
+    }
+    .Af-About-h4 {
+        font-size: 14px !important;
+        line-height: 21px !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .Af-HeroComponent2-heading .title,
+    .Af-HeroComponent2-heading-about .title {
+        font-size: 28px !important;
+        line-height: 36.2px !important;
+
+        span {
+            font-size: 28px !important;
+            line-height: 36.2px !important;
+        }
+    }
+
+    .Af-HeroComponent2-heading .desc,
+    .Af-HeroComponent2-heading-about .desc {
+        font-size: 14px !important;
+        line-height: 21px !important;
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 540px) {
+    .Af-HeroComponent2 {
+        width: 100%;
+        margin: 0 auto;
+        padding: 14px;
+    }
+
+    .Af-HeroComponent2 img {
+        width: 100%;
+        height: 253px;
+    }
+
+    .Af-HeroComponent2-heading,
+    .Af-HeroComponent2-heading-about {
+        width: 100%;
+        padding: 24.1px;
+        margin-right: 0;
+        margin-top: -50px;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .Af-HeroComponent2-heading .title,
+    .Af-HeroComponent2-heading-about .title {
+        margin-bottom: 0;
+    }
+
+    .Af-HeroComponent2-heading .desc,
+    .Af-HeroComponent2-heading-about .desc {
+        margin-top: 14px;
+
+    }
+
+    .Af-HeroComponent2-father {
+        padding-left: 4.10%;
+        padding-right: 4.10%;
+    }
+}
+
+@media (max-width: 389px) {
+    .Af-HeroComponent2 {
+        padding: 10px;
+    }
+
+    .Af-HeroComponent2 img {
+        height: 253px;
+    }
+
+    .Af-HeroComponent2-heading,
+    .Af-HeroComponent2-heading-about {
+        padding: 14px;
+        margin-right: 0;
+        margin-top: -50px;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .Af-HeroComponent2-heading .title,
+    .Af-HeroComponent2-heading-about .title {
+        font-size: 24px !important;
+
+        span {
+            font-size: 24px !important;
+        }
+    }
+
+    .Af-HeroComponent2-heading .desc,
+    .Af-HeroComponent2-heading-about .desc {
+        font-size: 12px !important;
+    }
+}
+
+@keyframes moveGradient {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}

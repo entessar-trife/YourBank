@@ -1,0 +1,22 @@
+/* Set the default cursor for the entire page */
+body {
+    cursor: url('../../assets/imgs/Mouse-default.png'), default;
+}
+
+/* Apply a specific cursor style for clickable elements */
+button,
+button a,
+a,
+i,
+.hw-fotIconConta,
+.openNavBtn,
+.closeNavBtn,
+select,
+.giftIcon {
+    cursor: url('../../assets/imgs/Mouse-Pointer.png'), auto !important;
+}
+
+/* Apply a specific cursor style for input fields */
+input {
+    cursor: url('../../assets/imgs/Mouse-Inherit.png'), auto !important;
+}

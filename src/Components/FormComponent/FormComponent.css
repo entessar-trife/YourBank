@@ -1,0 +1,481 @@
+.AA-form-section {
+    padding-top: 198px;
+    background-color: var(--black10-color);
+}
+
+.AA-pb-40 {
+    padding-bottom: 3.898%;
+}
+/** for form padding **/
+.AA-px-297 {
+    padding-left: 15.46875%;
+    padding-right: 15.46875%;
+}
+
+/**style image design**/
+.AA-form-section .AA-design {
+    position: relative;
+}
+
+.AA-form-section .AA-design {
+    content: url('../../assets/imgs/AbstractDesign4.png');
+    width: 342px;
+    height: 325px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/**style form container**/
+.AA-form-section .AA-form-container {
+    position: relative;
+    display: inline-block;
+    border: 1px solid var(--gray15-color);
+    border-radius: 20px;
+    width: 100%;
+}
+
+/**style background of form**/
+.AA-form-section .AA-form-container .AA-form-container-bg {
+    width: 100%;
+    height: 100%;
+}
+
+.AA-form-section .AA-form-container .AA-form-container-bg:before {
+    position: absolute;
+    background-image: url('../../assets/imgs/login-bg.webp');
+    display: inline-block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-color: var(--black11-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 5%;
+    border-radius: 20px;
+    filter: grayscale(100%);
+}
+
+/**style custom title**/
+.AA-form-section .AA-form-container .AA-form-container-bg .AM-title-comp {
+    padding-top: 7.54%;
+    padding-bottom: 6.033%;
+}
+
+.AA-form-section .AA-form-container .AA-form-container-bg .AM-title-comp .title,
+.AA-form-section .AA-form-container .AA-form-container-bg .AM-title-comp .highlight,
+.AA-form-section .AA-form-container .AA-form-container-bg .AM-title-comp .desc {
+    text-align: center;
+}
+
+.AA-form-section .AA-form-container .AA-form-container-bg .AM-title-comp .desc {
+    line-height: 22.5px;
+    margin-bottom: 0;
+}
+
+.AA-form-section .AA-form-container .AA-form-container-bg .AM-title-comp .title,
+.AA-form-section .AA-form-container .AA-form-container-bg .AM-title-comp .highlight {
+    line-height: 60px;
+}
+
+.AA-form-section .AA-form-container .AA-form-container-bg .AM-title-comp .title {
+    margin-bottom: 1.51%;
+}
+
+/**style error message**/
+.AA-form-section .AA-form-container .AA-form-container-bg .AA-error {
+    color: red;
+    padding: 10px 20px 0 20px;
+    margin: 0;
+}
+
+.AA-form-section .AA-form-container .AA-form-container-bg .AA-hide {
+    display: none;
+}
+
+.AA-form-section .AA-form-container .AA-form-container-bg .AA-show {
+    display: block;
+}
+
+/***style input field**/
+.AA-form-section .AA-form-container .AA-form-container-bg .AA-input-Fields {
+    width: 100%;
+}
+
+.AA-form-section .AA-form-container .AA-form-container-bg .AA-input-pb {
+    padding-bottom: 2.923%;
+}
+
+.AA-form-section .AA-form-container .AA-form-container-bg .AA-input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--gray10-color);
+    border: 1px solid var(--gray15-color);
+    padding: 23.341px;
+    border-radius: 88px;
+    width: 100%;
+    position: relative;
+}
+
+.AA-form-section .AA-form-container .AA-form-container-bg .AA-input {
+    color: var(--white-color);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.AA-form-section .AA-form-container .AA-form-container-bg .AA-input:focus{
+    outline: none;
+} 
+
+.AA-input:-webkit-autofill, .AA-input:-webkit-autofill:hover, .AA-input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px var(--gray10-color)white inset,!important; 
+    box-shadow: 0 0 0px 1000px var(--gray10-color) inset; 
+    -webkit-text-fill-color: var(--white-color); /* Adjust text color as needed */ 
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/**style row of inputs**/
+.AA-form-section .AA-form-container .AA-form-container-bg .AA-inputs-row {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+/***style input with inside icon **/
+
+.AA-form-section .AA-form-container .AA-form-container-bg .eye-icon {
+    color: var(--gray35-color);
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+/**style forget btn**/
+.AA-form-section .AA-form-container .AA-form-container-bg .AA-forget-pass-btn {
+    color: var(--white-color);
+    text-decoration: underline;
+    padding-top: 3.898635477582846%;
+    padding-bottom: 3.898635477582846%;
+    transition: 0.5s;
+}
+
+.AA-form-section .AA-form-container .AA-form-container-bg .AA-forget-pass-btn:hover {
+    color: var(--green60-color);
+}
+
+/**style btn (login - signup) in form **/
+.AA-form-section .AA-form-container .AA-form-container-bg .AA-custom-btn {
+    width: 50.48732943469786%;
+    padding: 18px 20px 18px 20px;
+    border-radius: 63px;
+    border: none;
+    text-align: center;
+    margin-bottom: 2.3391%;
+}
+
+.AA-bg-btn-green-60 {
+    background-color: var(--green60-color);
+}
+
+.AA-bg-btn-gray-15 {
+    background: var(--gray15-color);
+    border: 1px solid var(--gray20-color) !important;
+}
+
+.AA-btn-white {
+    color: var(--white-color);
+}
+
+.AA-a-btn-black {
+    color: var(--black-color);
+}
+
+/**style form login + signup form**/
+.AA-form-section .AA-form-container .AA-form-container-bg form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 11.312% 7.541% 11.312%;
+}
+
+/***style continue p***/
+.AA-form-section .AA-form-container .AA-form-container-bg .AA-continue-p {
+    position: relative;
+    color: var(--gray70-color);
+    width: 50.4873294347%;
+    text-align: center;
+    margin-bottom: 2.923976608187135%;
+    display: flex;
+    flex-direction: row;
+}
+
+.AA-form-section .AA-form-container .AA-form-container-bg .AA-continue-p p {
+    margin: 0;
+    padding: 0 20px;
+}
+
+.AA-form-section .AA-form-container .AA-form-container-bg .AA-continue-p::before,
+.AA-form-section .AA-form-container .AA-form-container-bg .AA-continue-p::after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+}
+
+/**style social login div**/
+.AA-form-section .AA-form-container .AA-form-container-bg .AA-social-login-btns {
+    display: flex;
+    gap: 24px;
+}
+
+.AA-social-login-btns .Af-img-father {
+    width: 94px;
+    height: 94px;
+    padding: 12px;
+}
+
+.AA-social-login-btns .Af-img-father .Af-img-button {
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+
+}
+
+.AA-social-login-btns .Af-img-father .Af-img-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.AA-form-section .AA-form-container .AA-form-container-bg form a {
+    text-decoration: none;
+}
+/** laptop **/
+@media (max-width: 1919px) {
+    .AA-form-section {
+        padding-top: 153px;
+    }
+
+    .AA-pb-40 {
+        padding-bottom: 4.5180%;
+    }
+
+    .AA-px-297 {
+        padding-left: 13.05555556%;
+        padding-right: 13.05555556%;
+    }
+
+    /**style image design**/
+    .AA-form-section .AA-design {
+        width: 256px;
+        height: 243px;
+    }
+
+    /**style custom title**/
+    .AA-form-section .AA-form-container .AA-form-container-bg .AM-title-comp {
+        padding: 7.518% 18.796% 5.639% 18.796%;
+    }
+
+    .AA-form-section .AA-form-container .AA-form-container-bg .AM-title-comp .title {
+        margin-bottom: 2.4096%;
+    }
+
+    .AA-form-section .AA-form-container .AA-form-container-bg .AM-title-comp .title,
+    .AA-form-section .AA-form-container .AA-form-container-bg .AM-title-comp .highlight {
+        line-height: 47.5px;
+    }
+
+    .AA-form-section .AA-form-container .AA-form-container-bg .AM-title-comp .desc {
+        line-height: 20px;
+    }
+
+    /**style form login + signup form**/
+    .AA-form-section .AA-form-container .AA-form-container-bg form {
+        padding: 0px 18.7969% 7.518% 18.7969%;
+    }
+
+    .AA-form-section .AA-form-container .AA-form-container-bg .AA-input-pb {
+        padding-bottom: 4.518%;
+    }
+
+    /**style forget btn**/
+    .AA-form-section .AA-form-container .AA-form-container-bg .AA-forget-pass-btn {
+        padding-top: 4.518%;
+        padding-bottom: 4.518%;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /**style social login div**/
+    .AA-form-section .AA-form-container .AA-form-container-bg .AA-social-login-btns {
+        gap: 20px;
+    }
+
+    .AA-social-login-btns .Af-img-father {
+        width: 68px;
+        height: 68px;
+        padding: 8px;
+    }
+
+    .AA-social-login-btns .Af-img-father .Af-img-button {
+        width: 52px;
+        height: 52px;
+        padding: 14px;
+    }
+
+    .AA-social-login-btns .Af-img-father .Af-img-button img {
+        width: 24px;
+        height: 24px;
+    }
+
+    /**style row of inputs**/
+    .AA-form-section .AA-form-container .AA-form-container-bg .AA-inputs-row {
+        gap: 24px;
+    }
+
+    /**style inputs**/
+    .AA-form-section .AA-form-container .AA-form-container-bg .AA-input-group {
+        padding: 19.5px;
+    }
+
+    .AA-form-section .AA-form-container .AA-form-container-bg .AA-input {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /***style continue p***/
+    .AA-form-section .AA-form-container .AA-form-container-bg .AA-continue-p {
+        width: 60.843373494%;
+        margin-bottom: 3.614457831325301%;
+    }
+
+    .AA-form-section .AA-form-container .AA-form-container-bg .AA-continue-p p {
+        font-size: 14px;
+        line-height: 21px;
+        padding: 0 16px;
+    }
+
+    /**style btn (login - signup) in form **/
+    .AA-form-section .AA-form-container .AA-form-container-bg .AA-custom-btn {
+        width: 60.8433734939759%;
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 3.6144%;
+        padding: 14px 20px 14px 20px;
+    }
+}
+
+/**tablet**/
+@media (max-width: 1200px) {
+    .AA-form-section {
+        padding-top: 138px;
+    }
+
+    /**style row of inputs**/
+    .AA-form-section .AA-form-container .AA-form-container-bg .AA-inputs-row {
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .AA-form-section .AA-form-container .AA-form-container-bg .AA-custom-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .AA-pb-40 {
+        padding-bottom: 8.053691275167785%;
+    }
+
+    .AA-form-section .AA-design {
+        width: 167px;
+        height: 159px;
+    }
+
+    .AA-px-297 {
+        padding-left: 4.101%;
+        padding-right: 4.101%;
+    }
+
+    /**style custom title**/
+    .AA-form-section .AA-form-container .AA-form-container-bg .AM-title-comp {
+        padding: 8.379% 8.379% 11.173% 8.379%;
+    }
+
+    .AA-form-section .AA-form-container .AA-form-container-bg .AM-title-comp .title,
+    .AA-form-section .AA-form-container .AA-form-container-bg .AM-title-comp .highlight {
+        line-height: 35px;
+    }
+
+    .AA-form-section .AA-form-container .AA-form-container-bg .AM-title-comp .title {
+        margin-bottom: 3.3557%;
+    }
+
+    .AA-form-section .AA-form-container .AA-form-container-bg .AM-title-comp .desc {
+        line-height: 17.5px;
+    }
+
+    /**style form login + signup form**/
+    .AA-form-section .AA-form-container .AA-form-container-bg form {
+        padding: 0px 8.3798% 8.3798% 8.3798%;
+    }
+
+
+    .AA-form-section .AA-form-container .AA-form-container-bg .AA-input-pb {
+        padding-bottom: 6.7114%;
+    }
+
+    /**style form input**/
+    .AA-form-section .AA-form-container .AA-form-container-bg .AA-input-group{
+        padding: 15.5px;
+    }
+
+    .AA-form-section .AA-form-container .AA-form-container-bg .AA-forget-pass-btn {
+        padding-top: 8.05369%;
+        padding-bottom: 8.05369%;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    /***style continue p***/
+    .AA-form-section .AA-form-container .AA-form-container-bg .AA-continue-p {
+        width: 100%;
+        padding-top: 0;
+        margin-bottom: 8.0536%;
+    }
+
+    /**style btn (login - signup) in form **/
+    .AA-form-section .AA-form-container .AA-form-container-bg .AA-custom-btn {
+        margin-bottom: 8.0536%;
+    }
+}
+
+@media (max-width: 389px) {
+    .AA-form-section .AA-design {
+        width: 140px;
+        height: 140px;
+    }
+
+    /**style custom title**/
+    .AA-form-section .AA-form-container .AA-form-container-bg .AM-title-comp {
+        padding-right: 3.379%;
+        padding-left: 3.379%;
+    }
+
+    /**style form login + signup form**/
+    .AA-form-section .AA-form-container .AA-form-container-bg form {
+        padding: 0px 3.379% 3.379% 3.379%;
+    }
+
+    .AA-form-section .AA-form-container .AA-form-container-bg .AA-input{
+        font-size: 14px;
+    }
+}

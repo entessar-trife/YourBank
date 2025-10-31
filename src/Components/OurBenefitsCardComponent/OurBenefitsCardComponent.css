@@ -1,0 +1,236 @@
+.hw-OurBenefitsCard h1,
+.hw-OurBenefitsCard h2,
+.hw-OurBenefitsCard h3,
+.hw-OurBenefitsCard h4,
+.hw-OurBenefitsCard h5,
+.hw-OurBenefitsCard h6,
+.hw-OurBenefitsCard p {
+    margin-bottom: 0;
+}
+
+/* Main card container style */
+.hw-OurBenefitsCard {
+    gap: 30px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--gray15-color);
+    width: fit-content;
+    flex: 1;
+}
+
+/* Gradient background of the card */
+.hw-gradient-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(var(--green60-color) 0%,
+            var(--black11-color) 80%);
+    opacity: 5%;
+    z-index: 2;
+}
+
+/* Blend background image inside the card */
+.hw-OurBenefitsBlendBg {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 50%;
+    z-index: 3;
+}
+
+/* Additional gradient overlay for the card */
+.hw-OurBenefitsCard::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    background: linear-gradient(90deg,
+            rgba(26, 26, 26, 0) 0%,
+            rgba(26, 26, 26, 0.9) 30%,
+            #1a1a1a 62%);
+}
+
+/* Card heading style */
+.hw-OurBenefitsCardHeading {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 6;
+}
+
+/* Icon container styling */
+.hw-OurBenefitsCardHeading .Af-img-father {
+    width: 98px;
+    height: 98px;
+    padding: 12px;
+}
+
+/* Icon styling */
+.hw-OurBenefitsCardHeading .Af-img-father .Af-img-son {
+    width: 74px;
+    height: 74px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title styling */
+.hw-OurBenefitsCardTitle {
+    color: var(--white-color);
+}
+
+/* Description text inside the card */
+.OurBenefitsCardDescription {
+    color: var(--gray70-color);
+    z-index: 6;
+}
+
+/* Responsive styling for screen widths up to 1919px */
+@media (max-width: 1919px) {
+    .hw-OurBenefitsCard {
+        padding: 40px;
+        gap: 24px;
+    }
+
+    .hw-OurBenefitsCardHeading {
+        gap: 14px;
+    }
+
+    .hw-OurBenefitsCardTitle {
+        font-size: 20px;
+        line-height: 30px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .hw-OurBenefitsCard:hover .hw-OurBenefitsCardTitle {
+        color: var(--green60-color);
+    }
+
+    .hw-OurBenefitsCardHeading .Af-img-father {
+        width: 76px;
+        height: 76px;
+        padding: 8px;
+    }
+
+    .hw-OurBenefitsCardHeading .Af-img-father .Af-img-son {
+        width: 60px;
+        height: 60px;
+        padding: 16px;
+    }
+
+    .hw-OurBenefitsCardHeading .Af-img-father .Af-img-son img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .OurBenefitsCardDescription {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .hw-roundedCardLeft {
+        border-radius: 40px 14px 40px 14px;
+    }
+
+    .hw-roundedCardRight {
+        border-radius: 14px 40px 14px 40px;
+    }
+}
+
+/* Responsive styling for screens up to 1439px */
+@media (max-width: 1439px) {
+    .hw-OurBenefitsCard {
+        padding: 30px;
+        gap: 20px;
+        min-height: 266px;
+    }
+
+    .hw-OurBenefitsCardHeading {
+        gap: 10px;
+    }
+
+    .hw-OurBenefitsCardTitle {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .OurBenefitsCardDescription {
+        width: unset;
+        font-size: 15px;
+    }
+}
+
+/* Responsive styling for screens up to 992px */
+@media (max-width: 992px) {
+
+    .hw-roundedCardRight,
+    .hw-roundedCardLeft {
+        border-radius: 40px 40px 10px 10px;
+    }
+
+    .hw-OurBenefitsCard {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .hw-OurBenefitsCardTitle {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .OurBenefitsCardDescription {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+/* Responsive styling for screens up to 540px */
+@media (max-width: 540px) {
+    .hw-OurBenefitsCard {
+        padding: 23px;
+    }
+
+    .hw-OurBenefitsCardHeading .Af-img-father {
+        width: 72px;
+        height: 72px;
+    }
+
+    .hw-OurBenefitsCardHeading .Af-img-father .Af-img-son {
+        width: 56px;
+        height: 56px;
+        padding: 10px;
+    }
+
+    .hw-OurBenefitsCardHeading .Af-img-father .Af-img-son img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* Responsive styling for screens up to 389px */
+@media (max-width: 389px) {
+    .hw-OurBenefitsCard {
+        padding: 20px;
+        gap: 18px;
+    }
+
+    .OurBenefitsCardDescription {
+        max-width: fit-content;
+        font-size: 12px;
+    }
+
+    .hw-OurBenefitsCardTitle {
+        font-size: 16px;
+        line-height: 27px;
+    }
+}

@@ -1,0 +1,229 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--black11-color);
+    width: 83.125%;
+    height: 95px;
+    padding: 20px 34px;
+    border: 1px solid var(--gray15-color);
+    border-radius: 100px;
+    position: fixed;
+    top: 50px;
+    left: 8.4375%;
+    z-index: 1000;
+    transition: top 0.8s ease, width 0.8s ease;
+}
+
+nav .userName {
+    color: var(--white-color);
+    font-weight: 500;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.navLogo {
+    width: 155px;
+    height: 40px;
+}
+
+.responsiveNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 62.1073298%;
+}
+
+.responsiveLogo {
+    display: none;
+}
+
+
+nav.scrolled {
+    padding: 22px 8.5%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 0px;
+}
+
+.openNavBtn {
+    background-color: var(--green60-color);
+    border-radius: 82px;
+    padding: 6px 14px;
+    display: none;
+}
+
+.closeNavBtn {
+    font-size: 45px;
+    color: var(--white-color);
+    margin-top: 40px;
+    display: none;
+    transition: 1s;
+}
+
+.closeNavBtn:hover {
+    color: var(--green60-color);
+}
+
+.closeNavBtn:active {
+    transform: rotate(180deg);
+}
+
+.responsiveNav ul {
+    display: flex;
+    margin-bottom: 0;
+    list-style: none;
+    padding-left: 0;
+}
+
+.responsiveNav ul li a {
+    text-decoration: none;
+    color: var(--white-color);
+    border-radius: 82px;
+    padding: 13.5px 24px;
+    transition: 0.5s;
+}
+
+.responsiveNav ul li a:not(.activeLink):hover,
+.ET-navBtns a:hover {
+    color: var(--green60-color);
+}
+
+.activeLink {
+    background-color: var(--gray15-color);
+}
+
+.ET-navBtns a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px 30px;
+    transition: 0.3s;
+}
+
+.ET-navBtns a.ET-bgGreen {
+    background-color: var(--green60-color);
+    border-radius: 82px;
+    color: var(--black11-color);
+}
+
+/* Start Responsive */
+
+/* figma design */
+@media (max-width: 1919px) {
+    nav {
+        width: 88.889%;
+        height: 73px;
+        left: 5.5555%;
+        padding: 14px 24px;
+        top: 30px;
+    }
+
+    .navLogo {
+        width: 116.87px;
+        height: 30px;
+    }
+
+    .responsiveNav ul li a {
+        padding: 11px 18px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    nav.scrolled {
+        padding: 14px 5.5%;
+    }
+
+    .ET-bgGreen {
+        padding: 12px 24px;
+    }
+
+    .ET-navBtns a {
+        padding: 13px 24px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    nav .userName {
+        font-size: 14px;
+        line-height: 21px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .responsiveNav ul {
+        margin-left: -50px;
+    }
+}
+
+/* figma design */
+@media (max-width: 992px) {
+    nav {
+        width: 91.794%;
+        left: 4.103%;
+        height: 68px;
+        top: 40px;
+    }
+
+    .navLogo {
+        width: 101.29px;
+        height: 26px;
+    }
+
+    .responsiveNav {
+        background-color: var(--black11-color);
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        transform: translateY(-100%);
+        transition: transform 1s ease-in-out;
+    }
+
+    .responsiveNav.open {
+        transform: translateY(0)
+    }
+
+    .responsiveLogo.responsiveNavLogo {
+        display: block;
+    }
+
+    .closeNavBtn.openMenu {
+        display: flex;
+    }
+
+    .responsiveNav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: 0;
+    }
+
+    .responsiveNav ul li {
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+
+    .openNavBtn {
+        display: flex;
+    }
+
+    nav .userName {
+        margin-right: 0;
+    }
+
+    .ET-navBtns {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .ET-navBtns a {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+}

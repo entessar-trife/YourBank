@@ -1,0 +1,299 @@
+.hw-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: var(--black11-color);
+}
+
+.hw-footer .logo {
+    width: 155px;
+    height: 40px;
+}
+
+.hw-footer .hw-footerLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 26px;
+    padding: 0;
+    margin: 0;
+}
+
+.hw-footer .hw-footerLinks a {
+    text-decoration: none;
+    font-weight: 400;
+    color: var(--offwhite-90-color);
+    display: inline-block;
+}
+
+.hw-footer .hw-Contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+
+    >div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+
+        a {
+            text-decoration: none;
+            color: var(--offwhite-90-color);
+            margin-bottom: 0;
+        }
+    }
+}
+
+.hw-Contacts-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+}
+
+.hw-lineGray {
+    width: 100%;
+    background-color: var(--gray15-color);
+    height: 1px;
+}
+
+.hw-footerBottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 30px 16px 16px;
+    border: 1px solid var(--gray15-color);
+    background-color: #1A1A1A;
+    border-radius: 100px;
+}
+
+.hw-footerBottom>span {
+    font-weight: 300;
+    color: var(--gray70-color);
+}
+
+.hw-footerBottom .hw-footerPrivacy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    a {
+        font-weight: 300;
+        color: var(--gray70-color);
+        text-decoration: none;
+        transition: all 0.5s;
+    }
+
+    a:hover {
+        color: var(--green60-color);
+    }
+}
+
+.lineF {
+    width: 1px;
+    height: 27px;
+    background-color: var(--gray70-color);
+}
+
+/* <reset-style> ============================ */
+
+/* <main-style> ============================ */
+.hw-menu-link {
+    color: #fff;
+    line-height: 2;
+    position: relative;
+}
+
+.hw-menu-link::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--green60-color);
+    position: absolute;
+    bottom: -.25rem;
+    right: 0;
+    transition: right .4s, width .4s, left .4s;
+}
+
+.hw-menu-link:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+@media (max-width: 1919px) {
+    .hw-footer {
+        padding-top: 60px;
+        padding-bottom: 30px;
+        gap: 40px;
+    }
+
+    .hw-footer .logo {
+        width: 132.46px;
+        height: 34px;
+    }
+
+    .hw-logo {
+        gap: 3.54px;
+    }
+
+    .hw-footer .hw-footerLinks {
+        gap: 14px;
+    }
+
+    .hw-footer .hw-footerLinks a {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .hw-footer .hw-Contacts {
+        gap: 20px;
+
+        >div {
+            a {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    .hw-Contacts-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .hw-footerBottom {
+        padding: 12px 24px 12px 12px;
+    }
+
+    .hw-footerBottom .hw-footerIcons {
+        gap: 8px;
+    }
+
+    .hw-fotIconConta {
+        padding: 12px;
+    }
+
+    .hw-fotIconConta img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .hw-footerBottom>span {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .hw-footerBottom .hw-footerPrivacy {
+        gap: 8px;
+
+        a {
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+
+    .lineF {
+        height: 21px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hw-footer {
+        padding-top: 50px;
+        padding-bottom: 30px;
+        gap: 30px;
+    }
+
+    .hw-footer .hw-footerLinks a {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .hw-footer .hw-Contacts {
+        flex-wrap: wrap;
+
+        >div {
+            a {
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+    }
+
+    .hw-footerBottom {
+        padding: 50px 24px 30px 12px;
+        flex-direction: column;
+        border-radius: 12px;
+        position: relative;
+        gap: 20px;
+    }
+
+    .hw-footerBottom .hw-footerIcons {
+        position: absolute;
+        bottom: 100%;
+        transform: translatey(52%);
+    }
+}
+
+@media (max-width: 389px) {
+    .hw-footer {
+        gap: 40px;
+    }
+
+    .hw-footer .hw-footerLinks {
+        gap: 14px;
+        flex-direction: column;
+        line-height: 26px;
+    }
+
+    .hw-footer .hw-footerLinks a {
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    .hw-footer .hw-Contacts {
+        justify-content: center;
+        flex-wrap: wrap;
+
+        >div {
+            a {
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+    }
+
+    .hw-footerBottom .hw-footerIcons {
+        gap: 8px;
+    }
+
+    .hw-fotIconConta {
+        padding: 10px;
+    }
+
+    .hw-footerBottom>span {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .hw-footerBottom .hw-footerPrivacy {
+        a {
+            font-size: 11px;
+            line-height: 15px;
+        }
+    }
+
+    .lineF {
+        height: 15px;
+    }
+}

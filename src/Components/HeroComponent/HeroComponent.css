@@ -1,0 +1,895 @@
+.es-heroContainer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7.5%;
+    padding-top: 10.3125%;
+    overflow: hidden;
+    background-color: var(--black10-color);
+}
+
+/* The image at the top left of the section */
+.es-heroContainer::before {
+    content: "";
+    background-image: url('../../assets/imgs/AbstractDesign5.png');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 759px;
+    height: 610.81px
+}
+
+/*Left Side Start*/
+.es-heroLeftContent {
+    width: 51.7535%;
+    padding-top: 6.266%;
+}
+
+.es-heroLeftContent .es-subTitle {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    padding: 10px 20px 10px 0;
+    border-radius: 61px;
+    background-color: var(--gray15-color);
+}
+
+.es-heroLeftContent .es-subTitle span {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.es-heroLeftContent .es-mainTitle {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.es-heroLeftContent .es-mainTitle .title {
+    font-weight: 500;
+    animation: moveGradient 5s infinite linear;
+    background: linear-gradient(90deg, #caff33, #E4E4E7, #d8ff66, #fff);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.es-heroLeftContent img {
+    padding-left: 12px;
+}
+
+.es-heroLeftContent span {
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--white-color);
+}
+
+.es-heroBtn {
+    padding: 18px 30px;
+    background-color: var(--green60-color);
+    width: fit-content;
+    border-radius: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    transition: all 0.2s ease;
+}
+
+/* start styling button hover */
+.es-heroBtn:before,
+.es-heroBtn:after {
+    position: absolute;
+    content: "";
+    width: 150%;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+    z-index: -1000;
+    background-repeat: no-repeat;
+}
+
+.es-heroBtn:hover:before {
+    top: -70%;
+    background-image: radial-gradient(circle, var(--green60-color) 20%, transparent 20%),
+        radial-gradient(circle, transparent 20%, var(--green60-color) 20%, transparent 30%),
+        radial-gradient(circle, var(--green60-color) 20%, transparent 20%),
+        radial-gradient(circle, var(--green60-color) 20%, transparent 20%),
+        radial-gradient(circle, transparent 10%, var(--green60-color) 15%, transparent 20%),
+        radial-gradient(circle, var(--green60-color) 20%, transparent 20%),
+        radial-gradient(circle, var(--green60-color) 20%, transparent 20%),
+        radial-gradient(circle, var(--green60-color) 20%, transparent 20%),
+        radial-gradient(circle, var(--green60-color) 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+        10% 10%, 18% 18%;
+    background-position: 50% 120%;
+    animation: greenTopBubbles 0.6s ease;
+}
+
+.es-heroBtn:hover:after {
+    bottom: -70%;
+    background-image: radial-gradient(circle, var(--green60-color) 20%, transparent 20%),
+        radial-gradient(circle, var(--green60-color) 20%, transparent 20%),
+        radial-gradient(circle, transparent 10%, var(--green60-color) 15%, transparent 20%),
+        radial-gradient(circle, var(--green60-color) 20%, transparent 20%),
+        radial-gradient(circle, var(--green60-color) 20%, transparent 20%),
+        radial-gradient(circle, var(--green60-color) 20%, transparent 20%),
+        radial-gradient(circle, var(--green60-color) 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+    background-position: 50% 0%;
+    animation: greenBottomBubbles 0.6s ease;
+}
+
+.es-heroBtn:active {
+    transform: scale(0.96);
+}
+
+/* end styling button hover */
+
+.es-heroBtn a {
+    text-decoration: none;
+    color: var(--black11-color);
+}
+
+/* Left Side End*/
+
+/*Right Side Start*/
+.es-rightSide {
+    position: relative;
+    animation: zoomInAnimation 3s ease-out forwards;
+}
+
+.es-heroRightContent {
+    padding: 34.68px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 26.01px;
+    border-radius: 10.4px;
+    border: 0.87px solid transparent;
+    background: linear-gradient(-214.85deg, rgba(202, 255, 51, 0.2) 0%,
+            rgba(202, 255, 51, 0) 11.24%, rgba(202, 255, 51, 0) 91.73%,
+            rgba(202, 255, 51, 0.2) 99.95%), rgba(38, 38, 38, 1) border-box;
+}
+
+.es-heroRightContent::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10.4px;
+    position: absolute;
+    background-color: var(--black10-color);
+    z-index: 2;
+}
+
+/* Green Arrows Img styling*/
+.es-heroRightContent::after {
+    content: "";
+    background-image: url('../../assets/imgs/AbstractDesign.png');
+    background-position: center;
+    background-size: cover;
+    width: 417.95px;
+    height: 382.73px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: -35%;
+}
+
+.es-heroRightContent .bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 2;
+    background: linear-gradient(214.85deg,
+            rgba(26, 26, 26, 0) 0%,
+            rgba(26, 26, 26, 0.7) 10%,
+            #1A1A1A 60%),
+        url('../../assets/imgs/blend.png');
+}
+
+.es-heroRightContent .es-yourTrans h4,
+.es-heroRightContent .exchange h4 {
+    position: relative;
+    color: var(--white-color);
+    z-index: 4;
+    font-size: 17.34px;
+    line-height: 26.01px;
+}
+
+.es-heroRightContent .es-yourTrans h4 {
+    margin-bottom: 17.34px;
+}
+
+.es-heroRightContent .exchange h4 {
+    margin-bottom: 25.14px;
+}
+.es-heroRightContent .es-exchangeBox {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--black11-color);
+    border: 0.87px solid var(--gray15-color);
+    border-radius: 10.4px;
+}
+
+.es-exchangeBox .es-miniBox {
+    width: 50%;
+}
+
+.es-exchangeBox .es-miniBox .es-upper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8.67px;
+    border-right: 0.87px solid var(--gray15-color);
+    border-bottom: 0.87px solid var(--gray15-color);
+    padding: 17.34px;
+}
+
+.es-currencyValue {
+    padding: 26.01px 17.34px 26.01px 17.34px;
+    font-size: 17.34px;
+    line-height: 26.01px;
+    color: var(--white-color);
+    border-right: 0.87px solid var(--gray15-color);
+}
+
+.es-currencyValue input.formInput {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: var(--white-color);
+    font-size: 17.34px !important;
+    line-height: 26.01px !important;
+    font-weight: 500;
+}
+
+.es-miniBox:nth-child(2) .es-currencyValue,
+.es-miniBox:nth-child(2) .es-upper {
+    border-right: none;
+}
+
+.exchangeBtn {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    padding: 13.87px 26.01px 13.87px 26.01px;
+    border-radius: 71.1px;
+    outline: none;
+    border: none;
+    margin-top: 25.14px;
+    background: var(--green-heavy);
+    color: var(--green65-color);
+    font-size: 15.61px;
+    line-height: 23.41px;
+    transition: all 0.3s ease;
+}
+.exchangeBtn:hover {
+    box-shadow: rgba(154, 215, 67, 0.24) 0px 0px 5px 0px, rgba(154, 215, 67, 0.24) 0px 0px 1px 0px;
+}
+.es-supportedCurrency {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--white-color);
+}
+
+.es-supportedCurrencyContainer {
+    margin-top: 12.52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10.78px;
+    width: fit-content;
+    background-color: var(--green-heavy);
+    border-radius: 69.36px;
+    margin-right: -50px;
+    transition: all 0.3s ease;
+}
+.es-supportedCurrencyContainer:hover {
+    box-shadow: rgba(154, 215, 67, 0.24) 0px 0px 5px 0px, rgba(154, 215, 67, 0.24) 0px 0px 1px 0px;
+}
+.es-heroContainer .es-supportedCurrency .es-currencyIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6.94px;
+    margin: 8.67px 8.67px 8.67px 0;
+    background-color: var(--black10-color);
+    border-radius: 47.69px;
+    padding: 8.67px;
+    border: 0.87px solid var(--gray15-color);
+}
+.es-heroContainer .es-supportedCurrency:hover .es-currencyImg{
+    box-shadow: rgba(154, 215, 67, 0.24) 0px 0px 5px 0px, rgba(154, 215, 67, 0.24) 0px 0px 1px 0px;
+}
+.es-supportedCurrencyContainer span {
+    margin-left: 20.81px;
+    font-size: 15.61px;
+    line-height: 23.41px;
+}
+
+.es-currencyIcons .es-currencyImg {
+    width: 34.68px;
+    height: 34.68px;
+    background-color: var(--gray15-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.es-monthlyIncome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8.67px;
+    position: relative;
+    width: fit-content;
+    margin-bottom: -30px;
+    margin-left: -60px;
+    padding: 13.87px 17.34px;
+    background-color: var(--green-heavy);
+    border-radius: 10.4px;
+    z-index: 3;
+}
+
+.es-monthlyIncome .es-icon {
+    width: 38.15px;
+    height: 38.15px;
+    border-radius: 50%;
+    background-color: var(--green60-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+.es-monthlyIncome .es-plusInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.87px;
+}
+
+.es-plusInfo span:nth-child(1) {
+    font-size: 17.34px;
+    color: var(--white-color);
+    line-height: 26.01px;
+}
+
+.es-plusInfo span:nth-child(2) {
+    font-size: 13.87px;
+    line-height: 20.81px;
+    color: var(--offwhite-90-color);
+}
+
+/*Right Side End*/
+
+/* Start Responsive*/
+@media (max-width: 1919px) {
+
+    /* Left Side Start*/
+    .es-heroContainer {
+        gap: 6.95%;
+        padding-top: 9.237%;
+    }
+
+    .es-heroContainer::before {
+        width: 546.75px;
+        height: 440px;
+    }
+
+    .es-heroLeftContent {
+        width: 50.7664%;
+        padding-top: 4.687%;
+    }
+
+    .es-heroRightContent::after {
+        width: 300px;
+        height: 275px;
+    }
+
+    .es-heroLeftContent .es-subTitle {
+        gap: 4px;
+        padding: 8px 16px 8px 0;
+    }
+
+    .es-heroLeftContent .es-subTitle span {
+        font-size: 14px;
+    }
+
+    .es-heroLeftContent .es-mainTitle {
+        margin-top: 16px;
+        margin-bottom: 40px;
+    }
+
+    .es-heroLeftContent img {
+        padding-left: 9.88px;
+    }
+
+    .es-heroBtn {
+        padding: 14px 24px;
+        width: 144px;
+        height: 49px;
+    }
+
+    .es-heroBtn a {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    /* Left Side start*/
+
+    /*Right Side Start*/
+    .es-heroRightContent {
+        padding: 27.55px;
+        gap: 20.66px;
+        border-radius: 8.26px;
+        border-width: 0.69px;
+    }
+
+    .es-heroRightContent::after {
+        width: 300px;
+        height: 275px;
+        right: -35%;
+
+    }
+
+    .es-heroRightContent .es-yourTrans h4,
+    .es-heroRightContent .exchange h4 {
+        font-size: 13.77px;
+        line-height: 20.66px;
+    }
+
+    .es-heroRightContent .es-yourTrans h4 {
+        margin-bottom: 13.77px;
+    }
+
+    .es-heroRightContent .exchange h4 {
+        margin-bottom: 19.97px;
+    }
+
+    .es-heroRightContent .es-exchangeBox {
+        border-width: 0.69px;
+        border-radius: 8.26px;
+    }
+
+    .es-exchangeBox .es-miniBox .es-upper {
+        gap: 6.89px;
+        border-width: 0.69px;
+        padding: 13.77px;
+    }
+
+    .es-currencyValue {
+        padding: 20.66px 13.77px 20.66px 13.77px;
+        font-size: 13.77px;
+        line-height: 20.66px;
+        border-width: 0.69px;
+    }
+
+    .es-currencyValue input.formInput {
+        font-size: 13.77px !important;
+        line-height: 20.66px !important;
+    }
+
+    .exchangeBtn {
+        margin-top: 19.97px;
+        font-size: 12.4px;
+        line-height: 18.59px;
+        padding: 11.02px 20.66px 11.02px 20.66px;
+        border-radius: 56.47px;
+    }
+
+    .es-monthlyIncome {
+        gap: 6.89px;
+        margin-bottom: -25px;
+        margin-left: -50px;
+        padding: 11.02px 13.77px;
+        border-radius: 8.26px;
+    }
+
+    .es-monthlyIncome .es-icon {
+        width: 30.35px;
+        height: 30.26px;
+    }
+
+    .es-icon img {
+        width: 9.32px;
+        height: 9.27px;
+    }
+
+    .es-monthlyIncome .es-plusInfo {
+        gap: 0.69px;
+    }
+
+    .es-plusInfo span:nth-child(1) {
+        font-size: 13.77px;
+        line-height: 20.66px;
+    }
+
+    .es-plusInfo span:nth-child(2) {
+        font-size: 11.02px;
+        line-height: 16.53px;
+    }
+
+    .es-supportedCurrencyContainer {
+        margin-top: 13.95px;
+        gap: 9.66px;
+        border-radius: 55.09px;
+        margin-right: -50px;
+    }
+
+    .es-heroContainer .es-supportedCurrency .es-currencyIcons {
+        gap: 6.94px;
+        margin: 6.89px 6.89px 6.89px 0;
+        border-radius: 37.88px;
+        padding: 6.89px;
+        border: 0.69px solid var(--gray15-color);
+    }
+
+    .es-supportedCurrencyContainer span {
+        margin-left: 16.53px;
+        font-size: 12.4px;
+        line-height: 18.59px;
+
+    }
+
+    .es-currencyIcons .es-currencyImg {
+        width: 27.62px;
+        height: 27.62px;
+    }
+
+    .es-currencyImg img {
+        width: 8.2px;
+        height: 13.06px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .es-heroContainer {
+        padding-top: 11.23%;
+        gap: 5%;
+    }
+
+    .es-heroLeftContent .es-mainTitle {
+        margin-top: 12px;
+        margin-bottom: 25px;
+    }
+
+    .es-heroLeftContent .es-mainTitle  .title,
+    .es-heroLeftContent .es-mainTitle .title span {
+        font-size: 32px;
+        line-height: 45px;
+    }
+
+    .es-heroRightContent {
+        padding: 20px;
+    }
+
+    .es-heroRightContent::after {
+        width: 250px;
+        height: 225px;
+        right: -23%;
+    }
+
+    .es-heroRightContent .es-yourTrans h4 {
+        margin-bottom: 10px;
+    }
+
+    .es-exchangeBox .es-miniBox .es-upper {
+        padding: 12px;
+    }
+
+    .es-currencyValue {
+        padding: 18px 10px 18px 10px;
+    }
+
+    .es-monthlyIncome {
+        margin-bottom: -18px;
+    }
+
+    .es-supportedCurrencyContainer {
+        margin-right: -30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .es-heroContainer {
+        min-height: fit-content;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: center;
+        padding-top: 23%;
+        gap: 54.43px;
+    }
+
+    .es-heroLeftContent {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    .es-heroRightContent .es-yourTrans h4,
+    .es-heroRightContent .exchange h4,
+    .es-currency-name,
+    .es-currencyValue {
+        text-align: left;
+    }
+
+    .es-heroLeftContent .es-mainTitle p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+@media (max-width: 768px) {
+    .es-heroLeftContent {
+        width: 100%;
+    }
+}
+
+@media (max-width: 540px) {
+
+    /* Left Side Start*/
+    .es-heroContainer {
+        padding-top: 158px;
+        padding-bottom: 0;
+        margin-bottom: 17.76%;
+    }
+
+    .es-heroContainer::before {
+        width: 382px;
+        height: 307.42px;
+    }
+
+    .es-heroRightContent::after {
+        width: 210px;
+        height: 201px;
+        top: -5%;
+    }
+
+    .es-heroLeftContent {
+        width: 100%;
+    }
+
+    .es-heroLeftContent .es-mainTitle {
+        margin-top: 12px;
+        margin-bottom: 30px;
+    }
+    .es-heroLeftContent .es-mainTitle .title,
+    .es-heroLeftContent .es-mainTitle .title span {
+        font-size: 28px;
+        line-height: 42px;
+        margin-top: 12px;
+        margin-bottom: 8px;
+    }
+    .es-heroLeftContent .es-mainTitle .desc{
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .es-heroRightContent::after {
+        right: -15%;
+    }
+
+    .es-rightSide {
+        padding: 0 26.28px;
+    }
+
+    .es-heroRightContent {
+        padding: 20.51px;
+        gap: 15.38px;
+        border-radius: 6.15px;
+        border-width: 0.51px;
+    }
+
+    .es-heroRightContent::after {
+        width: 220px;
+        height: 201px;
+        right: -15%;
+    }
+
+    .es-heroRightContent .es-yourTrans h4,
+    .es-heroRightContent .exchange h4 {
+        font-size: 10.26px;
+        line-height: 15.38px;
+        text-align: start;
+    }
+
+    .es-heroRightContent .es-yourTrans h4 {
+        margin-bottom: 10.62px;
+    }
+
+    .es-heroRightContent .exchange h4 {
+        margin-bottom: 14.87px;
+    }
+
+    .es-heroRightContent .es-exchangeBox {
+        border-width: 0.51px;
+        border-radius: 6.15px;
+    }
+
+    .es-exchangeBox .es-miniBox .es-upper {
+        gap: 5.13px;
+        border-width: 0.51px;
+        padding: 10.26px;
+    }
+
+    .es-currencyValue {
+        padding: 15.38px 10.26px;
+        font-size: 10.26px;
+        line-height: 15.38px;
+        border-width: 0.51px;
+        text-align: start;
+    }
+
+    .es-currencyValue input.formInput {
+        font-size: 10.26px !important;
+        line-height: 15.38px !important;
+    }
+
+    .exchangeBtn {
+        margin-top: 14.87px;
+        font-size: 9.23px;
+        line-height: 13.85px;
+        padding: 8.2px 15.38px;
+        border-radius: 42.05px;
+    }
+
+    .es-monthlyIncome {
+        gap: 5.13px;
+        margin-bottom: -18px;
+        margin-left: -30px;
+        padding: 8.2px 10.26px;
+        border-radius: 6.15px;
+    }
+
+    .es-monthlyIncome .es-icon {
+        width: 22.6px;
+        height: 22.6px;
+    }
+
+    .es-icon img {
+        width: 6.94px;
+        height: 6.94px;
+    }
+
+    .es-monthlyIncome .es-plusInfo {
+        gap: 0.51px;
+    }
+
+    .es-plusInfo span:nth-child(1) {
+        font-size: 10.26px;
+        line-height: 15.38px;
+    }
+
+    .es-plusInfo span:nth-child(2) {
+        font-size: 8.2px;
+        line-height: 12.31px;
+    }
+
+    .es-supportedCurrencyContainer {
+        margin-top: 10.46px;
+        gap: 6.3px;
+        border-radius: 41.02px;
+        margin-right: -20px;
+    }
+    .es-heroContainer .es-supportedCurrency .es-currencyIcons {
+        gap: 4.1px;
+        margin: 5.13px 5.13px 5.13px 0;
+        border-radius: 28.2px;
+        padding: 5.18px;
+        border: 0.51px solid var(--gray15-color);
+    }
+
+    .es-supportedCurrencyContainer span {
+        margin-left: 12.31px;
+        font-size: 9.23px;
+        line-height: 13.85px;
+    }
+
+    .es-currencyIcons .es-currencyImg {
+        width: 20.646px;
+        height: 20.46px;
+    }
+
+    .es-currencyImg img {
+        width: 6.11px;
+        height: 9.73px;
+    }
+}
+
+@media (max-width: 389px) {
+    .es-heroLeftContent .es-subTitle {
+        gap: 2.5px;
+        padding: 8px 9.5px 8px 0;
+    }
+    .es-heroLeftContent .es-mainTitle .title,
+    .es-heroLeftContent .es-mainTitle .title span {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .es-heroLeftContent .es-mainTitle .desc {
+        font-size: 12px;
+    }
+
+    .es-monthlyIncome {
+        margin-left: -2%;
+    }
+
+    .es-supportedCurrencyContainer {
+        margin-right: 0;
+    }
+}
+
+/*End Responsive*/
+
+/* Start Animation */
+
+@keyframes moveGradient {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Start Animation for "open account" Button*/
+@keyframes greenBottomBubbles {
+    0% {
+        background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+            70% -10%, 70% 0%;
+    }
+
+    50% {
+        background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+            105% 0%;
+    }
+
+    100% {
+        background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+            110% 10%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+
+@keyframes greenTopBubbles {
+    0% {
+        background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+            40% 90%, 55% 90%, 70% 90%;
+    }
+
+    50% {
+        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+            50% 50%, 65% 20%, 90% 30%;
+    }
+
+    100% {
+        background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+            50% 40%, 65% 10%, 90% 20%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+/* End Animation for "open account" Button*/

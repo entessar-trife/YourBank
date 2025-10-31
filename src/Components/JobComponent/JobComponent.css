@@ -1,0 +1,38 @@
+/* Removes the bottom margin of the description text inside the section container */
+.MR-SectionContiner .desc {
+  margin-bottom: 0;
+}
+
+/* Main container styling for the section */
+.MR-SectionContiner {
+  background-color: var(--black10-color);
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/* Styles for the flex container holding the job cards */
+.MR-JobcardFlex {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Media query for screens smaller than 1919px */
+@media (max-width: 1919px) {
+  .MR-SectionContiner .AM-title-comp{
+    width: 80.468%;
+  }
+  .MR-SectionContiner {
+    gap: 60px;
+  }
+
+  .MR-JobcardFlex {
+    gap: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .MR-SectionContiner .AM-title-comp{
+    width: 100%;
+  }
+}

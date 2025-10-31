@@ -1,0 +1,398 @@
+/* the container */
+.Af-UseCasesComponent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+/* the reverse container */
+.Af-UseCasesComponentReverse {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* side 1 */
+
+.Af-UseCasesComponentSide-1 {
+    width: 46.86%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+    background-color: var(--black11-color);
+    background-image: url('../../assets/imgs/AbstractDesign3.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    border-radius: 20px;
+}
+/* side 1 reverse*/
+.Af-UseCasesComponentSide-1-Reverse {
+    width: 46.86%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+    background-color: var(--black11-color);
+    background-image: url("../../assets/imgs/AbstractDesign4.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    border-radius: 20px;
+}
+/* The upper section of the card */
+.Af-cardTop {
+    width: 100%;
+    height: 222px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+/* The lower section of the card */
+.Af-cardBottom {
+    width: 100%;
+    height: 192px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+/* the small card */
+.Af-UseCasesComponentSide-1-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    padding: 30px;
+    background-color: var(--black10-color);
+    width: 48.45%;
+    height: 100%;
+    border-radius: 16px;
+    border: 1px solid var(--gray15-color);
+    transition: 0.5s;
+}
+
+.Af-UseCasesComponentSide-1-card span {
+    color: var(--white-color);
+    text-align: center;
+    font-size: 20px;
+}
+/* for icon */
+.Af-UseCasesComponentSide-1-card .Af-img-father {
+    padding: 10px;
+    width: 78px;
+    height: 78px;
+}
+
+.Af-UseCasesComponentSide-1-card .Af-img-father .Af-img-son {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* side 2 */
+.Af-UseCasesComponentSide-2 {
+    width: 46.86%;
+}
+
+.Af-UseCasesComponentSide-2-title {
+    margin-bottom: 62px;
+    width: 100%;
+}
+
+.Af-UseCasesComponentSide-2-title h4 {
+    color: var(--white-color);
+    transition: .3s ease-in-out;
+    line-height: 45px;
+}
+
+.Af-UseCasesComponentSide-2-title:hover.Af-UseCasesComponentSide-2-title h4 {
+    color: var(--green60-color);
+}
+
+.Af-UseCasesComponentSide-2-title p {
+    color: var(--gray70-color);
+}
+/* number section */
+.Af-UseCasesComponentSide-2-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+/* dashed line */
+.Af-line {
+    width: 1px;
+    height: 146px;
+    background-image: linear-gradient(to bottom, var(--gray15-color) 50%, transparent 50%);
+    background-size: 1px 20px;
+}
+
+.Af-UseCasesComponentSide-2-rating .Af-rate {
+    width: 24.42%;
+}
+
+.Af-UseCasesComponentSide-2-rating .Af-rate h3 {
+    color: var(--green60-color);
+}
+
+.Af-UseCasesComponentSide-2-rating .Af-rate p {
+    color: var(--gray70-color);
+}
+
+.Af-UseCasesComponentSide-2-button {
+    width: 100%;
+}
+
+.Af-Btn {
+    margin-top: 62px;
+    background-color: var(--black11-color);
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid var(--gray15-color);
+    border-radius: 82px;
+    padding: 18px 24px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+.Af-Btn:hover {
+    background-color: var(--green60-color);
+    transform: translateY(-5px);
+    color: var(--black11-color);
+}
+
+/* media  */
+
+
+@media (max-width:1919px) {
+
+    .Af-UseCasesComponentSide-1-Reverse,
+    .Af-UseCasesComponentSide-1 {
+        width: 47.65%;
+        padding: 40px;
+        gap: 10px;
+    }
+
+    .Af-cardTop {
+        height: 174px;
+        gap: 10px;
+    }
+
+    .Af-cardBottom {
+        height: 150px;
+        gap: 10px;
+    }
+
+    .Af-UseCasesComponentSide-1-card {
+        padding: 24px;
+        gap: 14px;
+        width: 49.05%;
+    }
+
+    .Af-UseCasesComponentSide-1-card .Af-img-father {
+        height: 64px;
+        width: 64px;
+        padding: 8px;
+        gap: 10px;
+    }
+
+    .Af-UseCasesComponentSide-1-card .Af-img-father .Af-img-son {
+        width: 48px;
+        height: 48px;
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .Af-UseCasesComponentSide-1-card .Af-img-father .Af-img-son img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .Af-UseCasesComponentSide-1-card span {
+        font-size: 16px;
+    }
+
+    .Af-UseCasesComponentSide-2 {
+        margin-top: 20px;
+        width: 47.65%;
+    }
+
+    .Af-UseCasesComponentSide-2-title {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .Af-UseCasesComponentSide-2-title h4 {
+        color: var(--white-color);
+        font-size: 26px;
+        line-height: 39px;
+    }
+
+
+    .Af-UseCasesComponentSide-2-title p {
+        color: var(--gray70-color);
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 300;
+    }
+
+    .Af-UseCasesComponentSide-2-rating .Af-rate p {
+        font-size: 16px;
+    }
+
+    .Af-UseCasesComponentSide-2-rating .Af-rate h3 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:1439px) {
+    .Af-UseCasesComponentSide-1-card span {
+        font-size: 14px;
+    }
+
+    .Af-UseCasesComponentSide-1-card-img {
+        width: 64px;
+        height: 64px;
+        padding: 8px;
+    }
+
+    .Af-UseCasesComponentSide-1-card-img div {
+        width: 48px;
+        height: 48px;
+    }
+
+    .Af-UseCasesComponentSide-2-rating div p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:992px) {
+
+    .Af-UseCasesComponent,
+    .Af-UseCasesComponentReverse {
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    .Af-UseCasesComponentSide-1,
+    .Af-UseCasesComponentSide-1-Reverse,
+    .Af-UseCasesComponentSide-2 {
+        width: 100%;
+    }
+
+    .Af-UseCasesComponentSide-1-card span {
+        font-size: 12px;
+    }
+
+    .Af-UseCasesComponentSide-2-rating {
+        justify-content: center;
+    }
+
+    .Af-UseCasesComponentSide-2-rating div p {
+        font-size: 14px;
+    }
+
+    .Af-UseCasesComponentSide-2-rating .Af-rate {
+        width: 72.06%;
+        text-align: center;
+        display: block;
+    }
+
+    .Af-line {
+        display: block;
+        width: 258px;
+        height: 1px;
+        background-image: linear-gradient(to right, var(--gray15-color) 50%, transparent 50%);
+        background-size: 20px 1px;
+    }
+
+    .Af-UseCasesComponentSide-2-title {
+        text-align: center;
+    }
+
+    .Af-UseCasesComponentSide-2-button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Af-UseCasesComponentSide-2-rating .Af-rate p {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:540px) {
+
+    .Af-UseCasesComponentSide-1-Reverse,
+    .Af-UseCasesComponentSide-1 {
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .Af-cardTop {
+        height: 160px;
+        gap: 10px;
+    }
+
+    .Af-cardBottom {
+        height: 160px;
+        gap: 10px;
+    }
+
+    .Af-UseCasesComponentSide-1-card {
+        padding: 20px 14px;
+        gap: 14px;
+        gap: 14px;
+        width: 48.88%;
+    }
+
+    .Af-UseCasesComponentSide-1-card span {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .Af-UseCasesComponentSide-2-title h4 {
+        color: var(--white-color);
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .Af-UseCasesComponentSide-2-title p {
+        color: var(--gray70-color);
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 300;
+    }
+    .Af-UseCasesComponentSide-2-rating{
+        gap:30px;
+    }
+    .Af-rate h3 {
+        line-height: 60px;
+        margin-bottom: 0;
+    }
+    .Af-rate p {
+        margin-bottom: 0;
+    }
+}
+
+@media(max-width:389px) {
+
+    .Af-UseCasesComponentSide-1-card span {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}

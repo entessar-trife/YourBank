@@ -1,0 +1,43 @@
+.giftIcon {
+  position: fixed;
+  left: 10px;
+  bottom: 0px;
+  width: 90px;
+  animation: bounce 1s infinite;
+}
+
+.custom-title {
+  font-size: 30px;
+  color: var(--green60-color) !important;
+  padding: 0;
+}
+
+.custom-confirm-btn {
+  background-color: var(--green60-color);
+  color: var(--black11-color);
+  font-size: 20px;
+  padding: 5px 20px;
+}
+
+.swal2-image {
+  margin: 0 auto 0;
+  width: 100px !important;
+}
+
+
+/* start animation */
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  80% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

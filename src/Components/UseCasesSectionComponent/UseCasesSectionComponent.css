@@ -1,0 +1,9 @@
+.Af-UseCasesSectionComponent {
+    background-color: var(--black10-color);
+    
+}
+@media(max-width:1919px){
+    .Af-UseCasesSectionComponent-title{
+        margin-bottom: 60px;
+    }
+}

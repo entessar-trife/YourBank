@@ -1,0 +1,87 @@
+.featuresCard {
+  width: 48.8%;
+  padding: 50px;
+  border-radius: 12px;
+  border: 1px solid var(--gray15-color);
+  background-color: var(--black11-color);
+}
+
+.ET-cardTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ET-cardTitle span {
+  font-size: 22px;
+  line-height: 33px;
+  color: var(--white-color);
+  transition: .3s ease-in-out;
+}
+
+.featuresCard:hover .ET-cardTitle span {
+  color: var(--green60-color);
+}
+
+.featuresCard p {
+  color: var(--gray70-color);
+  margin-top: 30px;
+  margin-bottom: 0;
+  width: 520px
+}
+
+/* start responsive */
+
+/* figma design */
+@media (max-width: 1919px) {
+  .featuresCard {
+    width: 49.014%;
+    padding: 40px;
+  }
+
+  .ET-cardTitle span {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .ET-cardTitle img {
+    width: 24px;
+  }
+
+  .featuresCard p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 24px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1439px) {
+  .featuresCard {
+    width: 48.014%;
+  }
+}
+
+@media (max-width: 992px) {
+  .featuresCard {
+    width: 100%;
+  }
+}
+
+/* figma design */
+@media (max-width: 768px) {
+  .featuresCard {
+    padding: 30px;
+  }
+
+  .ET-cardTitle span {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .featuresCard p {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 20px;
+  }
+}

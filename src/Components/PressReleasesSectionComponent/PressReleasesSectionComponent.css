@@ -1,0 +1,48 @@
+.pressReleases {
+  background-color: var(--black10-color);
+}
+
+.pressCards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+
+/* start responsive */
+
+/* figma design */
+@media (max-width: 1919px) {
+  .pressTitle {
+    margin-bottom: 60px;
+  }
+
+  .pressCards {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1439px) {
+  .pressCards {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .pressCards {
+    gap: 12px;
+  }
+}
+
+/* figma design */
+@media (max-width: 992px) {
+  .pressTitle {
+    margin-bottom: 40px;
+    width: 98%;
+  }
+
+  .pressCards {
+    gap: 20px;
+  }
+}

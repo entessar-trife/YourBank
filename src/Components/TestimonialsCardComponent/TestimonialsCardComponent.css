@@ -1,0 +1,136 @@
+/**style card**/
+.AA-testimony-card {
+    text-align: center;
+    position: relative;
+    min-width: 404px;
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/**style icon container**/
+.AA-testimony-card .AA-icon-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.AA-testimony-card .AA-icon-container .AA-icon {
+    width: 60px;
+    margin: 0 16px;
+}
+
+.AA-testimony-card .AA-icon-container::before,
+.AA-testimony-card .AA-icon-container::after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid var(--gray15-color);
+    margin: auto;
+}
+
+/**style card description**/
+.AA-testimony-card .AA-card-desc {
+    color: var(--white-color);
+    margin: 0 !important;
+}
+
+/**style card user name**/
+.AA-testimony-card .AA-card-name {
+    color: var(--green60-color);
+}
+
+/**style left-right shadow for card in small size form (992)px to (300)px**/
+.AA-right-shadow-card,
+.AA-left-shadow-card{
+    display: none;
+    top: 20px;
+    bottom: 20px;
+    pointer-events: none;
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    width: 40.52478134%;
+}
+
+.AA-left-shadow-card {
+    left: -1px;
+    background: linear-gradient(270deg, rgba(25, 25, 25, 0) 0%, var(--black10-color) 105.84%);
+}
+  
+.AA-right-shadow-card {
+    right: -1px;
+    background: linear-gradient(270deg, var(--black10-color) 10.8%, rgba(25, 25, 25, 0) 105.84%);
+}
+  
+/***laptop***/
+@media (max-width: 1919px) {
+    .AA-testimony-card{
+        min-width: 325.33px;
+        margin-right: 60px;
+        gap: 40px;
+    }
+
+    .AA-testimony-card .AA-icon-container .AA-icon {
+        width: 44px;
+    }
+
+    .AA-testimony-card .AA-card-desc,
+    .AA-testimony-card .AA-card-name {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+/***tablet***/
+@media (max-width: 992px) {
+    .AA-testimony-card {
+        border: 1px solid var(--gray15-color);
+        border-radius: 12px;
+        padding: 20px;
+        width: 100%;
+        min-height: 275px;
+        min-width: 246px !important;
+        gap: 30px;
+    }
+
+    .AA-testimony-card .AA-card-desc,
+    .AA-testimony-card .AA-card-name {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .AA-left-shadow-card {
+        width: 24.02234637%;
+        height: 85.34798535%;
+        left: 1px;
+        display: block;
+    }
+
+    .AA-right-shadow-card {
+        width: 27.37430168%;
+        height: 85.34798535%;
+        right: 1px;
+        display: block;
+    }
+}
+
+/***mobile***/
+@media (max-width: 768px) {
+    .AA-testimony-card {
+        border: 1px solid var(--gray15-color);
+        border-radius: 12px;
+        padding: 20px;
+    }
+
+    .AA-testimony-card .AA-icon-container .AA-icon {
+        width: 44px;
+    }
+
+    .AA-testimony-card .AA-card-desc {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}

@@ -1,0 +1,33 @@
+.hw-footerBottom .hw-footerIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.hw-fotIconConta {
+    padding: 14px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green60-color);
+    cursor: pointer;
+}
+
+.hw-footerIcons .hw-fotIconConta {
+    transition: all 0.4s;
+}
+
+.hw-footerIcons .hw-fotIconConta:hover {
+    transform: translateY(-5px);
+    background-color: var(--green70-color);
+}
+
+@media (max-width: 1919px) {
+    .hw-fotIconConta {
+        padding: 12px;
+        width: 44px;
+        height: 44px;
+    }
+}

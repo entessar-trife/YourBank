@@ -1,0 +1,100 @@
+/* Importing font from Google Fonts for the FAQ section */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Main container for the FAQ section */
+.MR-faqSectionContainer {
+  background-color: var(--black10-color);
+}
+
+/* Container for FAQ cards */
+.MR-faqCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  position: relative;
+}
+
+/* List of FAQ cards */
+.MR-faqCardList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  z-index: 1;
+}
+
+/* Gradient layer for fading effect at the bottom */
+.MR-linearGradient {
+  width: 100%;
+  height: 275px;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to bottom,
+      rgba(25, 25, 25, 0) 0%,
+      rgb(25, 25, 25, 1) 71%);
+  z-index: 100;
+}
+
+/* Styling for the button to toggle FAQ visibility */
+.MR-faqButton {
+  width: fit-content;
+  height: 63px;
+  border: var(--gray15-color) 1px solid;
+  border-radius: 100px;
+  background-color: var(--black11-color);
+  color: var(--white-color);
+  gap: 4px;
+  padding: 18px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", serif;
+  position: relative;
+  z-index: 101;
+  transition: all 0.5s;
+}
+
+/* Icon inside the button */
+.MR-faqArrowButton {
+  width: 22px;
+  height: 22px;
+}
+
+/* Hover effect for the button */
+
+.MR-faqButton:hover {
+  background-color: var(--green60-color);
+  transform: translateY(-5px);
+  color: var(--black11-color);
+}
+
+/* Responsive styles for screens smaller than 1919px */
+@media (max-width: 1919px) {
+  .MR-faqCardContainer {
+    margin-top: 60px;
+  }
+
+  .MR-faqCardList {
+    gap: 20px;
+  }
+
+  .MR-faqButton {
+    height: 49px;
+    gap: 4px;
+    padding: 14px 20px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .MR-faqArrowButton {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Responsive styles for screens smaller than 992px */
+@media (max-width: 992px) {
+  .MR-faqCardContainer {
+    margin-top: 50px;
+  }
+}
